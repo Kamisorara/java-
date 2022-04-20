@@ -13,10 +13,7 @@ public class lambdaDemo01 {
          * 如果这个匿名内部是一个接口，并且只有一个抽象方法需要重写
          * 上面的方法可以优化成下面nayang
          */
-        new Thread(() -> {
-            System.out.println("lambda方法启动了");
-
-        }).start();
+        new Thread(() -> System.out.println("lambda方法启动了")).start();
 
     }
 
